@@ -1,0 +1,58 @@
+{% extends "layout_fees.html" %}
+
+{% block page_title %}
+  Draft fees | Fees Register Admin console
+{% endblock %}
+
+{% block content %}
+
+<div class="topnav">
+    <div class="topnavalignment">
+      <div class="govuk-o-width-container">
+        <div class="govuk-grid-row">
+            <a href="all-fees.html">All fees</a>
+            <a href="draft-fees">Draft fees</a>
+            <a href="create-a-fee">Create a fee</a>
+            <a class="active" href="upload-fee">Upload a fee</a>
+            <a href="reference-data.html">Reference data</a>
+              <!-- <div class="search-container">
+                <input type="text" placeholder="Search..">
+                <button class"search-container" type="button"><i class="hod-search"></i></button>
+                  </div> -->
+        </div>
+      </div>
+    </div>
+</div>
+
+<div class="govuk-o-width-container">
+
+
+  <main role="main" class="govuk-o-main-wrapper">
+
+
+      <div class="govuk-o-grid">
+          <div class="govuk-o-grid__item govuk-o-grid__item--full">
+            <h1 class="govuk-heading-xl">Upload a fee</h1>
+
+            <p class="govuk-caption-m"> File must be a CSV file</p>
+
+            <div class="govuk-o-form-group"><label class="govuk-c-label" for="file-upload-1">
+              </label>
+              <input type="file" id="file-upload-1" name="file-upload-1" class="govuk-c-file-upload">
+            </div>
+
+            <input value="Next" type="submit" class="govuk-c-button">
+            <br>
+            <a href="#" class="govuk-link govuk-link--no-visited-state">Cancel</a>
+
+          </div>
+      </div>
+
+
+
+
+
+  </main>
+</div>
+
+{% endblock %}

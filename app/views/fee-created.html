@@ -1,0 +1,74 @@
+{% extends "layout_fees.html" %}
+
+{% block page_title %}
+  Blank page
+{% endblock %}
+
+{% block content %}
+
+<div class="topnav">
+    <div class="topnavalignment">
+      <div class="govuk-o-width-container">
+        <div class="govuk-grid-row">
+            <a href="all-fees.html">All fees</a>
+            <a href="draft-fees">Draft fees</a>
+            <a href="create-a-fee">Create a fee</a>
+            <a href="upload-fee">Upload a fee</a>
+            <a href="reference-data.html">Reference data</a>
+              <!-- <div class="search-container">
+                <input type="text" placeholder="Search..">
+                <button class"search-container" type="button"><i class="hod-search"></i></button>
+                  </div> -->
+        </div>
+      </div>
+    </div>
+</div>
+
+<div class="govuk-o-width-container">
+
+  <!-- If there's a user need, add back link or breadcrumbs here -->
+
+  <main role="main" class="govuk-o-main-wrapper">
+
+    <div class="govuk-o-grid">
+      <div class="govuk-o-grid__item govuk-o-grid__item--full">
+
+
+        <div class="govuk-o-width-container">
+
+                      <div class="govuk-o-main-wrapper">
+                        <div class="govuk-o-grid">
+                          <div class="govuk-o-grid__item govuk-o-grid__item--two-thirds">
+                            <div class="govuk-c-panel govuk-c-panel--confirmation">
+                      <h2 class="govuk-c-panel__title">
+                        Draft fee created
+                      </h2>
+                      <div class="govuk-c-panel__body">
+                        Fee code<br><strong>FEE0089</strong>
+                      </div>
+                    </div>
+                            <br>
+
+                            <h3 class="govuk-heading-m">What happens next</h3>
+
+                            <p class="govuk-body">Your fee has been added to your draft fees.</p>
+
+                            <a href="create-a-fee" role="button" class="govuk-c-button">
+                              Create another fee
+                            </a>
+
+                          </div>
+                        </div>
+                      </div>
+
+          </div>
+
+
+      </div>
+    </div>
+
+  </main>
+
+</div>
+
+{% endblock %}

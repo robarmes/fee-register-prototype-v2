@@ -1,0 +1,338 @@
+{% extends "layout_fees.html" %} {% block page_title %} FEE0002 | Fees Register Admin console {% endblock %} {% block content %}
+
+<!-- <div id="subHeader">
+      <div class="govuk-o-width-container">
+        <a href="all-fees.html" id="paragraphWhite">All fees</a>
+        <a href="draft-fees" id="paragraphWhite">Draft fees</a>
+        <a href="create-a-fee" id="paragraphWhite">Create a fee</a>
+        <a href="upload-fee" id="paragraphWhite">Upload a fee</a>
+        <a href="reference-data.html" id="paragraphWhite">Reference data</a>
+      </div>
+</div> -->
+
+<div class="topnav">
+    <div class="topnavalignment">
+      <div class="govuk-o-width-container">
+        <div class="govuk-grid-row">
+              <a href="all-fees.html">All fees</a>
+              <a href="draft-fees">Draft fees</a>
+              <a href="create-a-fee">Create a fee</a>
+              <a href="upload-fee">Upload a fee</a>
+              <a href="reference-data.html">Reference data</a>
+                <!-- <div class="search-container">
+                  <input type="text" placeholder="Search..">
+                  <button class"search-container" type="button"><i class="hod-search"></i></button>
+                    </div> -->
+        </div>
+      </div>
+    </div>
+</div>
+
+<div class="topnav2">
+  <p id=paragraphWhite>FEE0001</p>
+</div>
+
+<div class="govuk-o-width-container">
+
+  <!-- <div class="govuk-c-breadcrumbs">
+    <ol class="govuk-c-breadcrumbs__list">
+
+      <li class="govuk-c-breadcrumbs__list-item">
+        <a class="govuk-c-breadcrumbs__link" href="all-fees.html">All fees</a>
+      </li>
+      <li class="govuk-c-breadcrumbs__list-item" aria-current="page">FEE0002</li>
+    </ol>
+  </div> -->
+
+  <div>
+    <div class="govuk-o-grid">
+      <div class="govuk-o-grid__item govuk-o-grid__item--full">
+            <nav class="app-c-navigation govuk-h-clearfix" >
+
+            <ul class="app-c-navigation__list"  >
+              <li>
+                <a class="govuk-link" href="fee0001-summary.html">Summary</a>
+              </li>
+              <!-- <li >
+                <a class="govuk-link" href="fee0001-edit.html">Edit fee</a>
+              </li> -->
+              <li class="app-c-navigation--current-page">
+                <a class="govuk-link" href="fee0001-previous.html">Previous versions</a>
+              </li>
+
+            </ul>
+
+          </nav>
+      </div>
+    </div>
+  </div>
+
+<br>
+
+      <div class="govuk-o-grid">
+        <div class="govuk-o-grid__item govuk-o-grid__item--full">
+          <h1 class="govuk-heading-xl">
+
+              Previous versions
+            </h1>
+        </div>
+      </div>
+
+      <div class="govuk-o-grid">
+        <div class="govuk-o-grid__item govuk-o-grid__item--two-thirds">
+
+          <details class="govuk-c-details">
+          <summary class="govuk-c-details__summary">
+          <span class="govuk-c-details__summary-text">
+            Version 3
+          </span>
+          </summary>
+          <div class="govuk-c-details__text">
+            <table class="govuk-c-table">
+              <!-- <h2 class="govuk-heading-l">Summary</h2> -->
+              <!-- <caption class="govuk-c-table__caption">Core data</caption> -->
+              <thead class="govuk-c-table__head">
+                <tr class="govuk-c-table__row">
+                  <th class="govuk-c-table__header" scope="col"></th>
+                  <th class="govuk-c-table__header" scope="col"></th>
+                </tr>
+              </thead>
+              <tbody class="govuk-c-table__body">
+                <tr class="govuk-c-table__row">
+                  <th class="govuk-c-table__header" scope="row">Date edit</th>
+                  <td class="govuk-c-table__cell ">23 Jun 2005</td>
+                </tr>
+                <tr class="govuk-c-table__row">
+                  <th class="govuk-c-table__header" scope="row">Fee code</th>
+                  <td class="govuk-c-table__cell ">FEE0002</td>
+                </tr>
+                <tr class="govuk-c-table__row">
+                  <th class="govuk-c-table__header" scope="row">Fee amount</th>
+                  <td class="govuk-c-table__cell ">£550</td>
+                </tr>
+                <tr class="govuk-c-table__row">
+                  <th class="govuk-c-table__header" scope="row">Memo line</th>
+                  <td class="govuk-c-table__cell ">This is a memo line about the fee</td>
+                </tr>
+                <tr class="govuk-c-table__row">
+                  <th class="govuk-c-table__header" scope="row">Natural account code</th>
+                  <td class="govuk-c-table__cell ">X07238</td>
+                </tr>
+                <tr class="govuk-c-table__row">
+                  <th class="govuk-c-table__header" scope="row">Description</th>
+                  <td class="govuk-c-table__cell ">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas a sapien id arcu ullamcorper bibendum.</td>
+                </tr>
+                <tr class="govuk-c-table__row">
+                  <th class="govuk-c-table__header" scope="row">Active date</th>
+                  <td class="govuk-c-table__cell ">11 Jan 2011 to present</td>
+                </tr>
+                <tr class="govuk-c-table__row">
+                  <th class="govuk-c-table__header" scope="row">Type</th>
+                  <td class="govuk-c-table__cell ">Fixed</td>
+                </tr>
+                <tr class="govuk-c-table__row">
+                  <th class="govuk-c-table__header" scope="row">Amount type</th>
+                  <td class="govuk-c-table__cell ">Flat</td>
+                </tr>
+                <tr class="govuk-c-table__row">
+                  <th class="govuk-c-table__header" scope="row">Jurisdiction 1</th>
+                  <td class="govuk-c-table__cell ">Family</td>
+                </tr>
+                <tr class="govuk-c-table__row">
+                  <th class="govuk-c-table__header" scope="row">Jurisdiction 2</th>
+                  <td class="govuk-c-table__cell ">Family court</td>
+                </tr>
+                <tr class="govuk-c-table__row">
+                  <th class="govuk-c-table__header" scope="row">Service</th>
+                  <td class="govuk-c-table__cell ">Divorce</td>
+                </tr>
+                <tr class="govuk-c-table__row">
+                  <th class="govuk-c-table__header" scope="row">Fee Order Name</th>
+                  <td class="govuk-c-table__cell ">Lorem ipsum</td>
+                </tr>
+                <tr class="govuk-c-table__row">
+                  <th class="govuk-c-table__header" scope="row">Statutory Instrument</th>
+                  <td class="govuk-c-table__cell ">Lorem ipsum</td>
+                </tr>
+                <tr class="govuk-c-table__row">
+                  <th class="govuk-c-table__header" scope="row">SI REF ID</th>
+                  <td class="govuk-c-table__cell ">Lorem ipsum</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          </details>
+
+          <details class="govuk-c-details">
+          <summary class="govuk-c-details__summary">
+          <span class="govuk-c-details__summary-text">
+            Version 2
+          </span>
+          </summary>
+          <div class="govuk-c-details__text">
+            <table class="govuk-c-table">
+              <!-- <h2 class="govuk-heading-l">Summary</h2> -->
+              <!-- <caption class="govuk-c-table__caption">Core data</caption> -->
+              <thead class="govuk-c-table__head">
+                <tr class="govuk-c-table__row">
+                  <th class="govuk-c-table__header" scope="col"></th>
+                  <th class="govuk-c-table__header" scope="col"></th>
+                </tr>
+              </thead>
+              <tbody class="govuk-c-table__body">
+                <tr class="govuk-c-table__row">
+                  <th class="govuk-c-table__header" scope="row">Date edit</th>
+                  <td class="govuk-c-table__cell ">11 Jan 2011</td>
+                </tr>
+                <tr class="govuk-c-table__row">
+                  <th class="govuk-c-table__header" scope="row">Fee code</th>
+                  <td class="govuk-c-table__cell ">FEE0002</td>
+                </tr>
+                <tr class="govuk-c-table__row">
+                  <th class="govuk-c-table__header" scope="row">Fee amount</th>
+                  <td class="govuk-c-table__cell ">£550</td>
+                </tr>
+                <tr class="govuk-c-table__row">
+                  <th class="govuk-c-table__header" scope="row">Memo line</th>
+                  <td class="govuk-c-table__cell ">This is a memo line about the fee</td>
+                </tr>
+                <tr class="govuk-c-table__row">
+                  <th class="govuk-c-table__header" scope="row">Natural account code</th>
+                  <td class="govuk-c-table__cell ">X07238</td>
+                </tr>
+                <tr class="govuk-c-table__row">
+                  <th class="govuk-c-table__header" scope="row">Description</th>
+                  <td class="govuk-c-table__cell ">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas a sapien id arcu ullamcorper bibendum.</td>
+                </tr>
+                <tr class="govuk-c-table__row">
+                  <th class="govuk-c-table__header" scope="row">Active date</th>
+                  <td class="govuk-c-table__cell ">23 Jun 2005 to 11 Jan 2011</td>
+                </tr>
+                <tr class="govuk-c-table__row">
+                  <th class="govuk-c-table__header" scope="row">Type</th>
+                  <td class="govuk-c-table__cell ">Fixed</td>
+                </tr>
+                <tr class="govuk-c-table__row">
+                  <th class="govuk-c-table__header" scope="row">Amount type</th>
+                  <td class="govuk-c-table__cell ">Flat</td>
+                </tr>
+                <tr class="govuk-c-table__row">
+                  <th class="govuk-c-table__header" scope="row">Jurisdiction 1</th>
+                  <td class="govuk-c-table__cell ">Family</td>
+                </tr>
+                <tr class="govuk-c-table__row">
+                  <th class="govuk-c-table__header" scope="row">Jurisdiction 2</th>
+                  <td class="govuk-c-table__cell ">Family court</td>
+                </tr>
+                <tr class="govuk-c-table__row">
+                  <th class="govuk-c-table__header" scope="row">Service</th>
+                  <td class="govuk-c-table__cell ">Divorce</td>
+                </tr>
+                <tr class="govuk-c-table__row">
+                  <th class="govuk-c-table__header" scope="row">Fee Order Name</th>
+                  <td class="govuk-c-table__cell ">Lorem ipsum</td>
+                </tr>
+                <tr class="govuk-c-table__row">
+                  <th class="govuk-c-table__header" scope="row">Statutory Instrument</th>
+                  <td class="govuk-c-table__cell ">Lorem ipsum</td>
+                </tr>
+                <tr class="govuk-c-table__row">
+                  <th class="govuk-c-table__header" scope="row">SI REF ID</th>
+                  <td class="govuk-c-table__cell ">Lorem ipsum</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          </details>
+
+          <details class="govuk-c-details">
+          <summary class="govuk-c-details__summary">
+          <span class="govuk-c-details__summary-text">
+            Version 1
+          </span>
+          </summary>
+          <div class="govuk-c-details__text">
+            <table class="govuk-c-table">
+              <!-- <h2 class="govuk-heading-l">Summary</h2> -->
+              <!-- <caption class="govuk-c-table__caption">Core data</caption> -->
+              <thead class="govuk-c-table__head">
+                <tr class="govuk-c-table__row">
+                  <th class="govuk-c-table__header" scope="col"></th>
+                  <th class="govuk-c-table__header" scope="col"></th>
+                </tr>
+              </thead>
+              <tbody class="govuk-c-table__body">
+                <tr class="govuk-c-table__row">
+                  <th class="govuk-c-table__header" scope="row">Date edit</th>
+                  <td class="govuk-c-table__cell ">23 Jun 2005</td>
+                </tr>
+                <tr class="govuk-c-table__row">
+                  <th class="govuk-c-table__header" scope="row">Fee code</th>
+                  <td class="govuk-c-table__cell ">FEE0002</td>
+                </tr>
+                <tr class="govuk-c-table__row">
+                  <th class="govuk-c-table__header" scope="row">Fee amount</th>
+                  <td class="govuk-c-table__cell ">£550</td>
+                </tr>
+                <tr class="govuk-c-table__row">
+                  <th class="govuk-c-table__header" scope="row">Memo line</th>
+                  <td class="govuk-c-table__cell ">This is a memo line about the fee</td>
+                </tr>
+                <tr class="govuk-c-table__row">
+                  <th class="govuk-c-table__header" scope="row">Natural account code</th>
+                  <td class="govuk-c-table__cell ">X07238</td>
+                </tr>
+                <tr class="govuk-c-table__row">
+                  <th class="govuk-c-table__header" scope="row">Description</th>
+                  <td class="govuk-c-table__cell ">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas a sapien id arcu ullamcorper bibendum.</td>
+                </tr>
+                <tr class="govuk-c-table__row">
+                  <th class="govuk-c-table__header" scope="row">Active date</th>
+                  <td class="govuk-c-table__cell ">23 Apr 1997  to  23 Jun 2005</td>
+                </tr>
+                <tr class="govuk-c-table__row">
+                  <th class="govuk-c-table__header" scope="row">Type</th>
+                  <td class="govuk-c-table__cell ">Fixed</td>
+                </tr>
+                <tr class="govuk-c-table__row">
+                  <th class="govuk-c-table__header" scope="row">Amount type</th>
+                  <td class="govuk-c-table__cell ">Flat</td>
+                </tr>
+                <tr class="govuk-c-table__row">
+                  <th class="govuk-c-table__header" scope="row">Jurisdiction 1</th>
+                  <td class="govuk-c-table__cell ">Family</td>
+                </tr>
+                <tr class="govuk-c-table__row">
+                  <th class="govuk-c-table__header" scope="row">Jurisdiction 2</th>
+                  <td class="govuk-c-table__cell ">Family court</td>
+                </tr>
+                <tr class="govuk-c-table__row">
+                  <th class="govuk-c-table__header" scope="row">Service</th>
+                  <td class="govuk-c-table__cell ">Divorce</td>
+                </tr>
+                <tr class="govuk-c-table__row">
+                  <th class="govuk-c-table__header" scope="row">Fee Order Name</th>
+                  <td class="govuk-c-table__cell ">Lorem ipsum</td>
+                </tr>
+                <tr class="govuk-c-table__row">
+                  <th class="govuk-c-table__header" scope="row">Statutory Instrument</th>
+                  <td class="govuk-c-table__cell ">Lorem ipsum</td>
+                </tr>
+                <tr class="govuk-c-table__row">
+                  <th class="govuk-c-table__header" scope="row">SI REF ID</th>
+                  <td class="govuk-c-table__cell ">Lorem ipsum</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          </details>
+
+        </div>
+      </div>
+
+
+
+
+</div>
+
+{% endblock %}

@@ -1,0 +1,158 @@
+{% extends "layout_fees.html" %}
+
+{% block page_title %}
+  Draft fees | Fees Register Admin console
+{% endblock %}
+
+{% block content %}
+
+
+<div class="topnav">
+    <div class="topnavalignment">
+      <div class="govuk-o-width-container">
+        <div class="govuk-grid-row">
+            <a href="all-fees.html">All fees</a>
+            <a class="active" href="draft-fees">Draft fees</a>
+            <a href="create-a-fee">Create a fee</a>
+            <a href="upload-fee">Upload a fee</a>
+            <a href="reference-data.html">Reference data</a>
+              <!-- <div class="search-container">
+                <input type="text" placeholder="Search..">
+                <button class"search-container" type="button"><i class="hod-search"></i></button>
+                  </div> -->
+        </div>
+      </div>
+    </div>
+</div>
+
+<div class="govuk-o-width-container">
+
+
+  <main role="main" class="govuk-o-main-wrapper">
+
+
+      <div class="govuk-o-grid">
+          <div class="govuk-o-grid__item govuk-o-grid__item--full">
+            <h1 class="govuk-heading-xl">Draft fees</h1>
+          </div>
+      </div>
+
+          <div class="govuk-o-grid">
+        <div class="govuk-o-grid__item govuk-o-grid__item--one-half">
+          <h2 class="govuk-heading-l">Fees to submit</h2>
+
+          <input value="Delete" type="submit" class="govuk-c-button second-button">
+          <input value="Submit" type="submit" class="govuk-c-button">
+        </div>
+      </div>
+
+      <div class="govuk-o-grid">
+          <div class="govuk-o-grid__item govuk-o-grid__item--full">
+
+            <table class="govuk-c-table">
+                <thead class="govuk-c-table__head">
+                  <tr class="govuk-c-table__row-feereg2">
+                    <th class="govuk-c-table__header-feereg2" scope="col">
+                    <th class="govuk-c-table__header-feereg2" scope="col">Code</th>
+                    <th class="govuk-c-table__header-feereg2" scope="col">Description</th>
+                    <th class="govuk-c-table__header-feereg2" scope="col">Type</th>
+                    <th class="govuk-c-table__header-feereg2" scope="col">Amount type</th>
+                    <th class="govuk-c-table__header-feereg2" scope="col">Type value</th>
+                    <th class="govuk-c-table__header-feereg2" scope="col">Jurisdiction 1</th>
+                    <th class="govuk-c-table__header-feereg2" scope="col">Jurisdiction 2</th>
+                    <th class="govuk-c-table__header-feereg2" scope="col">Service</th>
+                    <th class="govuk-c-table__header-feereg2" scope="col">Event</th>
+                    <th class="govuk-c-table__header-feereg2" scope="col">Channel</th>
+                    <th class="govuk-c-table__header-feereg2" scope="col">Version</th>
+
+                    </th>
+                  </tr>
+
+
+                </thead>
+                  <tbody class="govuk-c-table__body">
+                    <tr class="govuk-c-table__row-feereg2">
+                      <td class="govuk-c-table__cell-feereg2">
+                        <div class="govuk-o-form-group">
+                             <fieldset class="govuk-c-fieldset">
+                               <div class="govuk-c-checkboxes">
+                                <label class="container">
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                              </label>
+                            </div>
+                      </fieldset>
+                    </div>
+                    </td>
+                      <th class="govuk-c-table__cell-ref-feereg2" scope="row"><a href="">FEE1123<a/></th>
+                      <td class="govuk-c-table__cell-feereg2">An application for..</td>
+                      <td class="govuk-c-table__cell-feereg2">Fixed</td>
+                      <td class="govuk-c-table__cell-feereg2">Flat</td>
+                      <td class="govuk-c-table__cell-feereg2">£23</td>
+                      <td class="govuk-c-table__cell-feereg2">Tribunal</td>
+                      <td class="govuk-c-table__cell-feereg2">Upper tribunal</td>
+                      <td class="govuk-c-table__cell-feereg2">Immigration and asylum</td>
+                      <td class="govuk-c-table__cell-feereg2">Issue</td>
+                      <td class="govuk-c-table__cell-feereg2">Defult</td>
+                      <td class="govuk-c-table__cell-feereg2">1</td>
+
+                  </tr>
+
+                    <tr class="govuk-c-table__row-feereg2">
+                      <td class="govuk-c-table__cell-feereg2">
+                        <div class="govuk-o-form-group">
+                             <fieldset class="govuk-c-fieldset">
+                               <div class="govuk-c-checkboxes">
+                                <label class="container">
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                              </label>
+                            </div>
+                      </fieldset>
+                    </div>
+                    </td>
+                      <th class="govuk-c-table__cell-ref-feereg2" scope="row"><a href="">FEE1123<a/></th>
+                      <td class="govuk-c-table__cell-feereg2">An application for..</td>
+                      <td class="govuk-c-table__cell-feereg2">Fixed</td>
+                      <td class="govuk-c-table__cell-feereg2">Flat</td>
+                      <td class="govuk-c-table__cell-feereg2">£23</td>
+                      <td class="govuk-c-table__cell-feereg2">Tribunal</td>
+                      <td class="govuk-c-table__cell-feereg2">Upper tribunal</td>
+                      <td class="govuk-c-table__cell-feereg2">Immigration and asylum</td>
+                      <td class="govuk-c-table__cell-feereg2">Issue</td>
+                      <td class="govuk-c-table__cell-feereg2">Defult</td>
+                      <td class="govuk-c-table__cell-feereg2">1</td>
+                  </tr>
+
+                  </tbody>
+             </table>
+
+         </div>
+      </div>
+
+      <br>
+
+      <div class="govuk-o-grid">
+    <div class="govuk-o-grid__item govuk-o-grid__item--two-thirds">
+      <h2 class="govuk-heading-l">Fees pending approval</h2>
+
+      <span >
+    No fees pending approval
+  </span>
+    </div>
+
+
+
+    <div class="govuk-o-grid">
+      <div class="govuk-o-grid__item govuk-o-grid__item--full">
+         <!-- <p>govuk-o-grid__item--full</p> -->
+      </div>
+    </div>
+
+    <br>
+    <br>
+
+  </main>
+</div>
+
+{% endblock %}

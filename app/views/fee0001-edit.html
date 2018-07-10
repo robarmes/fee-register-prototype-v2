@@ -1,0 +1,131 @@
+{% extends "layout_fees.html" %} {% block page_title %} FEE0002 | Fees Register Admin console {% endblock %} {% block content %}
+
+<!-- <div id="subHeader">
+      <div class="govuk-o-width-container">
+        <a href="all-fees.html" id="paragraphWhite">All fees</a>
+        <a href="draft-fees" id="paragraphWhite">Draft fees</a>
+        <a href="create-a-fee" id="paragraphWhite">Create a fee</a>
+        <a href="upload-fee" id="paragraphWhite">Upload a fee</a>
+        <a href="reference-data.html" id="paragraphWhite">Reference data</a>
+      </div>
+</div> -->
+
+<div class="topnav">
+    <div class="topnavalignment">
+      <div class="govuk-o-width-container">
+        <div class="govuk-grid-row">
+              <a href="all-fees.html">All fees</a>
+              <a href="draft-fees">Draft fees</a>
+              <a href="create-a-fee">Create a fee</a>
+              <a href="upload-fee">Upload a fee</a>
+              <a href="reference-data.html">Reference data</a>
+                <!-- <div class="search-container">
+                  <input type="text" placeholder="Search..">
+                  <button class"search-container" type="button"><i class="hod-search"></i></button>
+                    </div> -->
+        </div>
+      </div>
+    </div>
+</div>
+
+<div class="topnav2">
+  <p id=paragraphWhite>FEE0002</p>
+</div>
+
+<div class="govuk-o-width-container">
+
+  <!-- <div class="govuk-c-breadcrumbs">
+    <ol class="govuk-c-breadcrumbs__list">
+
+      <li class="govuk-c-breadcrumbs__list-item">
+        <a class="govuk-c-breadcrumbs__link" href="all-fees.html">All fees</a>
+      </li>
+      <li class="govuk-c-breadcrumbs__list-item" aria-current="page">FEE0002</li>
+    </ol>
+  </div> -->
+
+  <div>
+    <div class="govuk-o-grid">
+      <div class="govuk-o-grid__item govuk-o-grid__item--full">
+            <nav class="app-c-navigation govuk-h-clearfix" >
+
+            <ul class="app-c-navigation__list"  >
+              <li>
+                <a class="govuk-link" href="fee0002-summary.html">Summary</a>
+              </li>
+              <li class="app-c-navigation--current-page">
+                <a class="govuk-link" href="fee0002-edit.html">Edit fee</a>
+              </li>
+              <li>
+                <a class="govuk-link" href="fee0002-previous.html">Previous versions</a>
+              </li>
+
+            </ul>
+
+          </nav>
+      </div>
+    </div>
+  </div>
+
+<br>
+
+      <div class="govuk-o-grid">
+        <div class="govuk-o-grid__item govuk-o-grid__item--full">
+          <h1 class="govuk-heading-xl">
+              <span class="govuk-caption-xl">
+                  FEE0002
+              </span>
+              Edit fee
+            </h1>
+        </div>
+      </div>
+
+      <div class="govuk-o-grid">
+        <div class="govuk-o-grid__item govuk-o-grid__item--full">
+
+          <div class="govuk-o-form-group"> <label class="govuk-body govuk-!-w-bold" for="memo-line">
+                        Memo line</label> <label class="govuk-body govuk-!-w-regular"> (optional)</label> <br>
+            <input class="govuk-c-input govuk-!-width-one-quarter" id="memo-line" name="memo-line" type="text">
+          </div>
+
+          <div class="govuk-o-form-group"><label class="govuk-body govuk-!-w-bold" for="natural-acc-code">
+                        Natural account code</label><label class="govuk-body govuk-!-w-regular"> (optional)</label> <br>
+            <input class="govuk-c-input govuk-!-width-one-quarter" id="natural-acc-code" name="natural-acc-code" type="text">
+          </div>
+
+          <div class="govuk-o-form-group"><label class="govuk-body govuk-!-w-bold" for="natural-acc-code">
+                        Fee Order Name</label><label class="govuk-body govuk-!-w-regular"> (optional)</label> <br>
+            <input class="govuk-c-input govuk-!-width-one-quarter" id="natural-acc-code" name="natural-acc-code" type="text">
+          </div>
+
+          <div class="govuk-o-form-group"><label class="govuk-body govuk-!-w-bold" for="natural-acc-code">
+                        Statutory Instrument</label><label class="govuk-body govuk-!-w-regular"> (optional)</label> <br>
+            <input class="govuk-c-input govuk-!-width-one-quarter" id="natural-acc-code" name="natural-acc-code" type="text">
+          </div>
+
+          <div class="govuk-o-form-group"><label class="govuk-body govuk-!-w-bold" for="natural-acc-code">
+                        SI REF ID</label><label class="govuk-body govuk-!-w-regular"> (optional)</label> <br>
+            <input class="govuk-c-input govuk-!-width-one-quarter" id="natural-acc-code" name="natural-acc-code" type="text">
+          </div>
+
+        </div>
+      </div>
+
+      <a href="" role="button" class="govuk-c-button">
+        Save</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+{% endblock %}

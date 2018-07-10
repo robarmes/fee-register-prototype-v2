@@ -1,0 +1,220 @@
+{% extends "layout_fees.html" %}
+
+{% block page_title %}
+  All fees | Fees Register Admin console
+{% endblock %}
+
+{% block content %}
+
+
+<div class="topnav">
+    <div class="topnavalignment">
+      <div class="govuk-o-width-container">
+        <div class="govuk-grid-row">
+            <a class="active" href="all-fees.html">All fees</a>
+            <a href="draft-fees">Draft fees</a>
+            <a href="create-a-fee">Create a fee</a>
+            <a href="upload-fee">Upload a fee</a>
+            <a href="reference-data.html">Reference data</a>
+              <!-- <div class="search-container">
+                <input type="text" placeholder="Search..">
+                <button class"search-container" type="button"><i class="hod-search"></i></button>
+                  </div> -->
+        </div>
+      </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+<div class="govuk-o-width-container">
+
+  <main role="main" class="govuk-o-main-wrapper">
+
+        <div class="govuk-o-grid">
+          <div class="govuk-o-grid__item govuk-o-grid__item--full">
+            <h1 class="govuk-heading-xl">All fees</h1>
+          </div>
+        </div>
+
+        <div class="govuk-o-grid">
+          <div class="govuk-o-grid__item govuk-o-grid__item--two-thirds">
+
+              <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for a fee">
+              <br>
+              <br>
+
+          </div>
+        </div>
+
+            <div class="govuk-o-grid">
+              <div class="govuk-o-grid__item govuk-o-grid__item--full">
+
+                <table id="myTable">
+                  <tr class="header">
+                    <th>Code</th>
+                    <th>Description</th>
+                    <th>Type</th>
+                    <th>Amount type</th>
+                    <th>Type value</th>
+                    <th>Jurisdiction 1</th>
+                    <th>Jurisdiction 2</th>
+                    <th>Service</th>
+                    <th>Event</th>
+                    <th>Channel</th>
+                    <th>Version</th>
+                  </tr>
+
+                  <tbody class="govuk-c-table__body">
+                  <tr>
+                    <td><a href="fee0001-summary">FEE0001<a/></td>
+                    <td>Filing an application for a divorce</td>
+                    <td>Fixed</td>
+                    <td>Flat</td>
+                    <td>£550.00</td>
+                    <td>Family</td>
+                    <td>Family court</td>
+                    <td>Divorce</td>
+                    <td>Issue</td>
+                    <td>Defult</td>
+                    <td>4</td>
+                  </tr>
+
+                  <tr>
+                    <td><a href="">FEE0002<a/></td>
+                      <td >Additional copies of the grant representation</td>
+                      <td >Fixed</td>
+                      <td >Volume</td>
+                      <td >£0.5</td>
+                      <td >Family</td>
+                      <td >Probate registry</td>
+                      <td >Probate</td>
+                      <td >Copies</td>
+                      <td >Defult</td>
+                      <td >3</td>
+                  </tr>
+
+                  <tr>
+                    <td><a href="">FEE0003<a/></td>
+                    <td>Recovery of Land</td>
+                    <td>Fixed</td>
+                    <td>Flat</td>
+                    <td>£480.00</td>
+                    <td>Civil</td>
+                    <td>High court</td>
+                    <td>Possession claim</td>
+                    <td>Issue</td>
+                    <td>Defult</td>
+                    <td>3</td>
+                  </tr>
+
+                  <tr>
+                    <td><a href="">FEE0004<a/></td>
+                    <td>Recovery of Land</td>
+                    <td>Fixed</td>
+                    <td>Flat</td>
+                    <td>£355.00</td>
+                    <td>Civil</td>
+                    <td>County court</td>
+                    <td>Possession claim</td>
+                    <td>Issue</td>
+                    <td>Defult</td>
+                    <td>4</td>
+                  </tr>
+
+                  <tr>
+                    <td><a href="">FEE0005<a/></td>
+                    <td>Recovery of Land - online</td>
+                    <td>Fixed</td>
+                    <td>Flat</td>
+                    <td>£325.00</td>
+                    <td>Civil</td>
+                    <td>County court</td>
+                    <td>Possession claim</td>
+                    <td>Issue</td>
+                    <td>Defult</td>
+                    <td>4</td>
+                  </tr>
+
+                  <tr>
+                    <td><a href="">FEE0006<a/></td>
+                    <td>Where the party filing the request is legally aided</td>
+                    <td>Fixed</td>
+                    <td>Flat</td>
+                    <td>£200.00</td>
+                    <td>Family</td>
+                    <td>County court</td>
+                    <td>General</td>
+                    <td>Cost assessment</td>
+                    <td>Defult</td>
+                    <td>3</td>
+                  </tr>
+
+                  <tr>
+                    <td><a href="">FEE0007<a/></td>
+                    <td>Where the party filing the request is legally aided</td>
+                    <td>Fixed</td>
+                    <td>Flat</td>
+                    <td>£220.00</td>
+                    <td>Civil</td>
+                    <td>Probate registry</td>
+                    <td>Probate</td>
+                    <td>Cost assessment</td>
+                    <td>Defult</td>
+                    <td>4</td>
+                  </tr>
+
+
+
+
+
+                  </tbody>
+
+
+
+
+                </table>
+
+
+          </div>
+        </div>
+
+
+
+
+
+
+
+
+      </div>
+  </main>
+</div>
+
+{% endblock %} {% block page_scripts %}
+<script>
+function myFunction() {
+  // Declare variables
+  var input, filter, table, tr, td, i;
+  input = document.getElementById("myInput");
+  filter = input.value.toUpperCase();
+  table = document.getElementById("myTable");
+  tr = table.getElementsByTagName("tr");
+
+  // Loop through all table rows, and hide those who don't match the search query
+  for (i = 0; i < tr.length; i++) {
+    td = tr[i].getElementsByTagName("td")[0];
+    if (td) {
+      if (td.innerHTML.toUpperCase().indexOf(filter) > -1) {
+        tr[i].style.display = "";
+      } else {
+        tr[i].style.display = "none";
+      }
+    }
+  }
+}
+</script>
+{% endblock %}

@@ -1,0 +1,447 @@
+{% extends "layout_fees.html" %}
+
+{% block page_title %} Create a new fee | Fees Register Admin console {% endblock %}
+
+{% block content %}
+
+<!-- <div id="subHeader">
+      <div class="govuk-o-width-container">
+        <a href="all-fees.html" id="paragraphWhite">All fees</a>
+        <a href="draft-fees" id="paragraphWhite">Draft fees</a>
+        <a class="govuk-body govuk-!-w-bold" href="create-a-fee" id="paragraphWhite">Create a fee</a>
+        <a href="upload-fee" id="paragraphWhite">Upload a fee</a>
+        <a href="reference-data.html" id="paragraphWhite">Reference data</a>
+      </div>
+</div> -->
+
+<div class="topnav">
+    <div class="topnavalignment">
+      <div class="govuk-o-width-container">
+        <div class="govuk-grid-row">
+            <a href="all-fees.html">All fees</a>
+            <a href="draft-fees">Draft fees</a>
+            <a class="active" href="create-a-fee">Create a fee</a>
+            <a href="upload-fee">Upload a fee</a>
+            <a href="reference-data.html">Reference data</a>
+              <!-- <div class="search-container">
+                <input type="text" placeholder="Search..">
+                <button class"search-container" type="button"><i class="hod-search"></i></button>
+                  </div> -->
+        </div>
+      </div>
+    </div>
+</div>
+
+
+<div class="govuk-o-width-container">
+
+
+  <main role="main" class="govuk-o-main-wrapper">
+
+    <div class="govuk-o-grid">
+      <div class="govuk-o-grid__item govuk-o-grid__item--full">
+        <h1 class="govuk-heading-xl">Create a fee</h1>
+
+        <!-- <div class="govuk-o-form-group"><label class="govuk-body govuk-!-w-bold" for="fee-code">
+                      Fee code</label><label class="govuk-body govuk-!-w-regular"></label> <br>
+          <input class="govuk-c-input govuk-!-width-one-quarter" id="fee-code" name="fee-code" type="text">
+        </div> -->
+
+              <div class="inset-text">
+                <div class="govuk-body govuk-!-w-regular">Fee code:<p class="govuk-body govuk-!-w-bold">FEE0089</p></div>
+              </div>
+
+
+
+        <div class="govuk-o-form-group"><label class="govuk-body govuk-!-w-regular" for="memo-line">
+                      Memo line</label><label class="govuk-body govuk-!-w-regular"> (optional)</label> <br>
+          <input class="govuk-c-input govuk-!-width-one-quarter" id="memo-line" name="memo-line" type="text">
+        </div>
+
+        <div class="govuk-o-form-group"><label class="govuk-body govuk-!-w-regular" for="natural-acc-code">
+                      Natural account code</label><label class="govuk-body govuk-!-w-regular"> (optional)</label> <br>
+          <input class="govuk-c-input govuk-!-width-one-quarter" id="natural-acc-code" name="natural-acc-code" type="text">
+        </div>
+
+      </div>
+    </div>
+
+    <div class="govuk-o-grid">
+      <div class="govuk-o-grid__item govuk-o-grid__item--one-half">
+
+        <div class="govuk-o-form-group"><label class="govuk-body govuk-!-w-regular" for="more-detail">
+                      Description
+                      <span class="govuk-c-label__hint"> </span>
+                    </label>
+          <textarea id="more-detail" name="more-detail" rows="4" class="govuk-c-textarea"></textarea>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="govuk-o-form-group">
+      <label class="govuk-body govuk-!-w-regular" for="from-date">
+        From date</label>
+      <label class="govuk-body govuk-!-w-regular"></label> <br>
+      <input class="govuk-c-input govuk-!-width-one-quarter" id="from-date" name="from-date" type="text">
+    </div>
+
+    <div class="govuk-o-form-group"><label class="govuk-body govuk-!-w-regular" for="to-date">
+         To date</label><label class="govuk-body govuk-!-w-regular"> (optional)</label><br>
+      <input class="govuk-c-input govuk-!-width-one-quarter" id="to-date" name="to-date" type="text">
+    </div>
+
+    <div class="govuk-o-grid">
+      <div class="govuk-o-grid__item govuk-o-grid__item-one-quarter">
+
+        <div class="fee-type-form-group">
+          <div class="govuk-o-form-group">
+            <fieldset class="govuk-c-fieldset">
+              <div class="govuk-c-radios radio-toggle">
+                <label class="govuk-body govuk-!-w-bold" for="fee-type-fixed">Fee Type</label>
+                <br>
+                <br>
+
+                <div class="govuk-c-radios__item">
+                  <input class="govuk-c-radios__input" id="fee-type-fixed" name="fee-type" type="radio" value="fee-type-fixed">
+                  <label class="govuk-c-label govuk-c-radios__label" for="fee-type-fixed">Fixed<span class="govuk-c-fieldset__hint"> </span></label>
+                </div>
+
+                <div data-for="fee-type-fixed">
+                  <div class="govuk-o-form-group">
+
+                  </div>
+                </div>
+
+              </div>
+            </fieldset>
+          </div>
+
+          <div class="govuk-o-form-group">
+            <fieldset class="govuk-c-fieldset">
+              <div class="govuk-c-radios radio-toggle">
+
+                <div class="govuk-c-radios__item">
+                  <input class="govuk-c-radios__input" id="fee-type-ranged" name="fee-type" type="radio" value="fee-type-ranged">
+                  <label class="govuk-c-label govuk-c-radios__label" for="fee-type-ranged">Ranged<span class="govuk-c-fieldset__hint"> </span></label>
+                </div>
+
+                <div class="panel--border" data-for="fee-type-ranged">
+                  <div class="govuk-o-form-group">
+
+                    <div class="govuk-o-form-group"><label class="govuk-body govuk-!-w-regular" for="to-date">
+                                   From more than</label><label class="govuk-body govuk-!-w-regular"> </label><br>
+                      <input class="govuk-c-input govuk-!-width-item-full" id="for-more-than" name="for-more-than" type="text">
+                    </div>
+
+                    <div class="govuk-o-form-group"><label class="govuk-body govuk-!-w-regular" for="to-date">
+                                   Up to</label><label class="govuk-body govuk-!-w-regular"> (optional)</label><br>
+                      <input class="govuk-c-input govuk-!-width-item-full" id="up-to" name="up-to" type="text">
+                    </div>
+                    <br>
+                    <div class="ranged-radios-form-group">
+                      <label class="govuk-body govuk-!-w-bold" for="select-1">Range units</label>
+                      <br>
+                      <br>
+                      <div class="govuk-c-radios__item">
+                        <input class="govuk-c-radios__input" id="GBP" name="range-units" type="radio" value="GBP">
+                        <label class="govuk-c-label govuk-c-radios__label" for="volume">GBP<span class="govuk-c-fieldset__hint"> </span></label>
+                      </div>
+                      <div class="govuk-c-radios__item">
+                        <input class="govuk-c-radios__input" id="range-volume" name="range-units" type="radio" value="ranged-units">
+                        <label class="govuk-c-label govuk-c-radios__label" for="volume">Volume<span class="govuk-c-fieldset__hint"> </span></label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </fieldset>
+          </div>
+        </div>
+        <br>
+
+        <div class="amount-type-form-group">
+          <div class="govuk-o-form-group">
+            <fieldset class="govuk-c-fieldset">
+              <div class="govuk-c-radios radio-toggle">
+                <label class="govuk-body govuk-!-w-bold" for="changed-name-1">Amount Type</label>
+                <br>
+                <br>
+
+                <div class="govuk-c-radios__item">
+                  <input class="govuk-c-radios__input" id="flat" name="amount-type" type="radio" value="flat">
+                  <label class="govuk-c-label govuk-c-radios__label" for="flat">Flat<span class="govuk-c-fieldset__hint"> </span></label>
+                </div>
+
+                <div class="panel--border" data-for="flat">
+                  <div class="govuk-o-form-group">
+                    <div class="govuk-o-form-group"><label class="govuk-body govuk-!-w-regular" for="to-date">
+                                   Amount (£)</label><label class="govuk-body govuk-!-w-regular"> </label><br>
+                      <input class="govuk-c-input govuk-!-width-item-full" id="to-date" name="to-date" type="text">
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </fieldset>
+          </div>
+
+          <div class="govuk-o-form-group">
+            <fieldset class="govuk-c-fieldset">
+              <div class="govuk-c-radios radio-toggle">
+
+                <div class="govuk-c-radios__item">
+                  <input class="govuk-c-radios__input" id="percentage" name="amount-type" type="radio" value="percentage">
+                  <label class="govuk-c-label govuk-c-radios__label" for="percentage">Percentage <span class="govuk-c-fieldset__hint"> </span></label>
+                </div>
+
+                <div class="panel--border" data-for="percentage">
+                  <div class="govuk-o-form-group">
+                    <div class="govuk-o-form-group">
+                      <div class="govuk-o-form-group"><label class="govuk-body govuk-!-w-regular" for="to-date">
+                                       Percentage (%)</label><label class="govuk-body govuk-!-w-regular"> </label><br>
+                        <input class="govuk-c-input govuk-!-width-item-full" id="to-date" name="to-date" type="text">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </fieldset>
+          </div>
+
+          <div class="govuk-o-form-group">
+            <fieldset class="govuk-c-fieldset">
+              <div class="govuk-c-radios radio-toggle">
+
+
+                <div class="govuk-c-radios__item">
+                  <input class="govuk-c-radios__input" id="volume" name="amount-type" type="radio" value="volume">
+                  <label class="govuk-c-label govuk-c-radios__label" for="volume">Volume<span class="govuk-c-fieldset__hint"> </span></label>
+                </div>
+
+                <div class="panel--border" data-for="volume">
+                  <div class="govuk-o-form-group">
+                    <div class="govuk-o-form-group">
+                      <div class="govuk-o-form-group"><label class="govuk-body govuk-!-w-regular" for="to-date">
+                                     Amount (£)</label><label class="govuk-body govuk-!-w-regular"> </label><br>
+                        <input class="govuk-c-input govuk-!-width-item-full" id="to-date" name="to-date" type="text">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </fieldset>
+          </div>
+
+          <br>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="govuk-o-grid">
+      <div class="govuk-o-grid__item govuk-o-grid__item--one-half">
+
+        <div class="govuk-o-form-group"><label class="govuk-body govuk-!-w-regular" for="select-1">
+              Applicant
+            </label>
+          <select class="govuk-c-select" id="select-1" name="select-1">
+                <option value="0"selected>Select</option>
+                <option value="1">Personal</option>
+                <option value="2">All</option>
+                <option value="3">Professional</option>
+              </select>
+        </div>
+
+        <div class="govuk-o-form-group"><label class="govuk-body govuk-!-w-regular" for="select-1">
+              Jurisdiction 1
+            </label>
+          <select class="govuk-c-select" id="select-1" name="select-1">
+                <option value="0"selected>Select</option>
+                <option value="1">Civil</option>
+                <option value="2">Family</option>
+                <option value="3">Tribunal</option>
+              </select>
+        </div>
+
+        <div class="govuk-o-form-group"><label class="govuk-body govuk-!-w-regular" for="select-1">
+              Jurisdiction 2
+            </label>
+          <select class="govuk-c-select" id="select-1" name="select-1">
+                <option value="0"selected>Select</option>
+                <option value="1">County court</option>
+                <option value="2">High court</option>
+                <option value="3">Magistrates court</option>
+                <option value="4">Court of protection</option>
+                <option value="5">Family court</option>
+                <option value="6">Probate registry</option>
+                <option value="7">Gambling tribunal</option>
+                <option value="8">Gender recognition panel</option>
+                <option value="9">Immigration and asylum chamber</option>
+                <option value="10">Property chamber</option>
+                <option value="11">Tax chamber</option>
+                <option value="12">Upper tribunal immigration and asylum chamber</option>
+                <option value="13">Upper tribunal lands chamber</option>
+              </select>
+        </div>
+
+        <div class="govuk-o-form-group"><label class="govuk-body govuk-!-w-regular" for="select-1">
+              Service
+            </label>
+          <select class="govuk-c-select" id="select-1" name="select-1">
+                <option value="0"selected>Select</option>
+                <option value="1">Civil money claims</option>
+                <option value="2">Possession claim</option>
+                <option value="3">Insolvency</option>
+                <option value="4">Private law</option>
+                <option value="5">Public law</option>
+                <option value="6">Divorce</option>
+                <option value="7">Adoption</option>
+                <option value="8">Gambling</option>
+                <option value="9">Gender recognition</option>
+                <option value="10">Immigration and asylum</option>
+                <option value="11">Property</option>
+                <option value="12">Tax</option>
+                <option value="13">Probate</option>
+                <option value="14">General</option>
+                <option value="15">Magistrates</option>
+              </select>
+        </div>
+
+        <div class="govuk-o-form-group"><label class="govuk-body govuk-!-w-regular" for="select-1">
+              Channel
+            </label>
+          <select class="govuk-c-select" id="select-1" name="select-1">
+                <option value="0"selected>Select</option>
+                <option value="1">Online</option>
+                <option value="2">Bluk</option>
+                <option value="3">Defult</option>
+              </select>
+        </div>
+
+        <div class="govuk-o-form-group"><label class="govuk-body govuk-!-w-regular" for="select-1">
+              Event
+            </label>
+          <select class="govuk-c-select" id="select-1" name="select-1">
+                <option value="0"selected>Select</option>
+                <option value="1">Enforcement</option>
+                <option value="2">Appeal</option>
+                <option value="3">Search</option>
+                <option value="4">Issue</option>
+                <option value="5">General application</option>
+                <option value="6">Copies</option>
+                <option value="7">Hearing</option>
+                <option value="8">Miscellaneous</option>
+                <option value="9">Cost assessment</option>
+              </select>
+        </div>
+
+        <div class="govuk-o-form-group"><label class="govuk-body govuk-!-w-regular" for="select-1">
+              Direction
+            </label>
+          <select class="govuk-c-select" id="select-1" name="select-1">
+                <option value="0"selected>Select</option>
+                <option value="1">Cost recovery</option>
+                <option value="2">Enhanced</option>
+                <option value="3">Licence</option>
+                <option value="4">Partial cost recovery</option>
+                <option value="5">Pre cost recovery</option>
+                <option value="6">Reduced churn</option>
+                <option value="7">Simplified</option>
+              </select>
+        </div>
+
+      </div>
+    </div>
+
+
+
+
+    <div class="govuk-o-grid">
+      <div class="govuk-o-grid__item govuk-o-grid__item--full">
+
+        <div class="govuk-o-form-group"><label class="govuk-body govuk-!-w-regular" for="fee-order-name">
+        Fee Order Name</label><label class="govuk-body govuk-!-w-regular"> (optional)</label> <br>
+          <input class="govuk-c-input govuk-!-width-one-quarter" id="fee-order-name" name="fee-order-name" type="text">
+        </div>
+
+        <div class="govuk-o-form-group"><label class="govuk-body govuk-!-w-regular" for="stat-instrument">
+      Statutory Instrument</label><label class="govuk-body govuk-!-w-regular"> (optional)</label> <br>
+          <input class="govuk-c-input govuk-!-width-one-quarter" id="stat-instrument" name="stat-instrument" type="text">
+        </div>
+
+        <div class="govuk-o-form-group"><label class="govuk-body govuk-!-w-regular" for="si-ref">
+      SI REF ID</label><label class="govuk-body govuk-!-w-regular"> (optional)</label> <br>
+          <input class="govuk-c-input govuk-!-width-one-quarter" id="si-ref" name="si-ref" type="text">
+        </div>
+
+
+        <a href="fee-created" role="button" class="govuk-c-button">
+          Save and continue
+        </a>
+
+        <br>
+        <a href="all-fees" class="govuk-link govuk-link--no-visited-state">Save and exit</a>
+
+      </div>
+    </div>
+
+
+
+  </main>
+</div>
+
+{% endblock %} {% block page_scripts %}
+<script>
+  $(document).ready(function() {
+
+    // responsible for toggling panels
+    function togglePanel(groupSelector) {
+      var formGroup = $(groupSelector);
+      formGroup.find('.govuk-c-radios__input').on('change', function checkRadioStatus(event) {
+        event.stopImmediatePropagation();
+        var id = $(this).prop('id');
+        $(groupSelector + ' .panel--border').hide();
+        $(groupSelector + ' [data-for=' + id + ']').show();
+      });
+    }
+
+    var feeTypeToggle = $('.fee-type');
+    var radioButtons = $('.govuk-c-radios__input');
+
+    // ----------------------------------------------------
+
+    var amountTypeFormGroup = '.amount-type-form-group';
+    togglePanel(amountTypeFormGroup);
+
+    var feeTypeFormGroup = '.fee-type-form-group';
+    togglePanel(feeTypeFormGroup);
+
+    // var rangedRadiosFormGroup = '.ranged-radios-form-group';
+    // togglePanel(rangedRadiosFormGroup);
+
+
+
+    // fresh stuff
+    // var model = {
+    //   amount: '',
+    //   getTax: function (ev) {
+    //     this.amount = $(ev.target).val() - (0.25 * $(ev.target).val());
+    //     $('[display-text]').html( this.amount );
+    //   }
+    // };
+    //
+    // $('.model').on('keyup', model.getTax);
+
+
+
+
+
+
+
+  });
+</script>
+{% endblock %}
